@@ -3,16 +3,16 @@
 
 void Figure:: fig_type() {
 
-		std::cout << "Ôèãóðà:" << std::endl;
+		std::cout << "Ð¤Ð¸Ð³ÑƒÑ€Ð°:" << std::endl;
 }
 
  bool Figure::check() {
-		std::cout << "Ïðàâèëüíàÿ" << std::endl;
+		std::cout << "ÐŸÑ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 		return true;
 	}
 void Figure::print_sides_count() {
 
-		std::cout << "Êîëè÷åñòâî ñòîðîí: 0" << std::endl;
+		std::cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ð¾Ñ€Ð¾Ð½: 0" << std::endl;
 	}
 
 
@@ -33,24 +33,24 @@ void print_info(Figure* figure) {
 	}
 
 	void Triangle::fig_type(){
-		std::cout << "òðåóãîëüíèê:" << std::endl;
+		std::cout << "Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº:" << std::endl;
 	}
 
 	bool Triangle::check(){
 		if (A + B + C != 180) {
-			std::cout << "Íåïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return false;
 		}
 		else {
-			std::cout << "Ïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐŸÑ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return true;
 		}
 	}
 
 	void Triangle::print_sides_count() {
-		std::cout << "Êîëè÷åñòâî ñòîðîí: 3" << std::endl;
-		std::cout << "Ñòîðîíû: " << "a = " << a << " " << "b = " << b << " " << "c = " << c << std::endl;
-		std::cout << "Óãëû: " << "A = " << A << " " << "B = " << B << " " << "C = " << C << std::endl;
+		std::cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ð¾Ñ€Ð¾Ð½: 3" << std::endl;
+		std::cout << "Ð¡Ñ‚Ð¾Ñ€Ð¾Ð½Ñ‹: " << "a = " << a << " " << "b = " << b << " " << "c = " << c << std::endl;
+		std::cout << "Ð£Ð³Ð»Ñ‹: " << "A = " << A << " " << "B = " << B << " " << "C = " << C << std::endl;
 	}
 
 	Right_triangle::Right_triangle(int a_, int b_, int c_, int A_, int B_, int C_) :Triangle(a_, b_, c_, A_, B_, C_) {
@@ -58,18 +58,18 @@ void print_info(Figure* figure) {
 	}
 	void Right_triangle::fig_type() {
 
-		std::cout << "Ïðÿìîóãîëüíûé òðåóãîëüíèê:" << std::endl;
+		std::cout << "ÐŸÑ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ñ‹Ð¹ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº:" << std::endl;
 	}
 
 	bool Right_triangle::check()  {
 
 		if (C != 90) {
 
-			std::cout << "Íåïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return false;
 		}
 		else {
-			std::cout << "Ïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐŸÑ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return true;
 		}
 	}
@@ -79,7 +79,7 @@ void print_info(Figure* figure) {
 	}
 	void Isosceles_triangle::fig_type() {
 
-		std::cout << "Ðàâíîáåäðåííûé òðåóãîëüíèê:" << std::endl;
+		std::cout << "Ð Ð°Ð²Ð½Ð¾Ð±ÐµÐ´Ñ€ÐµÐ½Ð½Ñ‹Ð¹ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº:" << std::endl;
 
 	}
 	bool Isosceles_triangle::check()  {
@@ -87,12 +87,12 @@ void print_info(Figure* figure) {
 		if (a != c && A != C) {
 
 
-			std::cout << "Íåïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return false;
 		}
 		else {
 
-			std::cout << "Ïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐŸÑ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return true;
 		}
 	}
@@ -102,7 +102,7 @@ void print_info(Figure* figure) {
 	}
 	void Equilateral_triangle::fig_type() {
 
-		std::cout << "Ðàâíîñòîðîííèé òðåóãîëüíèê:" << std::endl;
+		std::cout << "Ð Ð°Ð²Ð½Ð¾ÑÑ‚Ð¾Ñ€Ð¾Ð½Ð½Ð¸Ð¹ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº:" << std::endl;
 
 	}
 	bool Equilateral_triangle::check() {
@@ -110,12 +110,12 @@ void print_info(Figure* figure) {
 		if ((a != c && a != b || c != a && c != b || b != a && b != c) && (A != 60 || B != 60 || C != 60)) {
 
 
-			std::cout << "Íåïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return false;
 		}
 		else {
 
-			std::cout << "Ïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐŸÑ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return true;
 		}
 
@@ -133,13 +133,13 @@ void print_info(Figure* figure) {
 		D = D_;
 	}
 	void Quadrangle::print_sides_count() {
-		std::cout << "Êîëè÷åñòâî ñòîðîí: 4" << std::endl;
-		std::cout << "Ñòîðîíû: " << "a = " << a << " " << "b = " << b << " " << "c = " << c << " " << "d = " << d << std::endl;
-		std::cout << "Óãëû: " << "A = " << A << " " << "B = " << B << " " << "C = " << C << " " << "D = " << D << std::endl;
+		std::cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ð¾Ñ€Ð¾Ð½: 4" << std::endl;
+		std::cout << "Ð¡Ñ‚Ð¾Ñ€Ð¾Ð½Ñ‹: " << "a = " << a << " " << "b = " << b << " " << "c = " << c << " " << "d = " << d << std::endl;
+		std::cout << "Ð£Ð³Ð»Ñ‹: " << "A = " << A << " " << "B = " << B << " " << "C = " << C << " " << "D = " << D << std::endl;
 	}
 	void Quadrangle::fig_type(){
 
-		std::cout << "×åòûð¸õóãîëüíèê:" << std::endl;
+		std::cout << "Ð§ÐµÑ‚Ñ‹Ñ€Ñ‘Ñ…ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº:" << std::endl;
 	}
 	
 	bool Quadrangle::check(){
@@ -147,12 +147,12 @@ void print_info(Figure* figure) {
 		if (A + B + C + D != 360) {
 
 
-			std::cout << "Íåïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return false;
 		}
 		else {
 
-			std::cout << "Ïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐŸÑ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return true;
 		}
 	}
@@ -163,7 +163,7 @@ void print_info(Figure* figure) {
 	}
 	void Rectangle::fig_type() {
 
-		std::cout << "Ïðÿìîóãîëüíèê:" << std::endl;
+		std::cout << "ÐŸÑ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº:" << std::endl;
 
 	}
 	bool Rectangle::check() {
@@ -171,12 +171,12 @@ void print_info(Figure* figure) {
 		if ((a != b && c != d) && (A + B + C + D != 90)) {
 
 
-			std::cout << "Íåïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return false;
 		}
 		else {
 
-			std::cout << "Ïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐŸÑ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return true;
 		}
 	}
@@ -186,18 +186,18 @@ void print_info(Figure* figure) {
 	}
 	void Square::fig_type() {
 
-		std::cout << "Êâàäðàò:" << std::endl;
+		std::cout << "ÐšÐ²Ð°Ð´Ñ€Ð°Ñ‚:" << std::endl;
 
 	}
 	bool Square::check() {
 		if ((a != b && a != c && a != d || b != a && b != c && b != d || c != a && c != b && c != d) && (A != 90 && B != 90 && C != 90 && D != 90)) {
 
-			std::cout << "Íåïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return false;
 		}
 		else {
 
-			std::cout << "Ïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐŸÑ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return true;
 		}
 	}
@@ -207,18 +207,18 @@ void print_info(Figure* figure) {
 	}
 	void Parallelogram::fig_type(){
 
-		std::cout << "Ïàðàëëåëîãðàìì:" << std::endl;
+		std::cout << "ÐŸÐ°Ñ€Ð°Ð»Ð»ÐµÐ»Ð¾Ð³Ñ€Ð°Ð¼Ð¼:" << std::endl;
 	}
 	bool Parallelogram::check()  {
 
 		if ((a != b && c != d) && (A != B && C != D)) {
 
-			std::cout << "Íåïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return false;
 		}
 		else {
 
-			std::cout << "Ïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐŸÑ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return true;
 		}
 	}
@@ -227,17 +227,17 @@ void print_info(Figure* figure) {
 	}
 	void Rhombus::fig_type() {
 
-		std::cout << "Ðîìá:" << std::endl;
+		std::cout << "Ð Ð¾Ð¼Ð±:" << std::endl;
 
 	}
 	bool Rhombus::check(){
 		if (A != B && C != D) {
-			std::cout << "Íåïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return false;
 		}
 		else {
 
-			std::cout << "Ïðàâèëüíàÿ" << std::endl;
+			std::cout << "ÐŸÑ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð°Ñ" << std::endl;
 			return true;
 		}
 	}
